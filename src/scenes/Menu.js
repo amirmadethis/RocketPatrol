@@ -38,6 +38,7 @@ class Menu extends Phaser.Scene {
     }
 
     update() {
+
         if (Phaser.Input.Keyboard.JustDown(keyLEFT)) {
           // Novice mode
           game.settings = {
@@ -47,6 +48,7 @@ class Menu extends Phaser.Scene {
           this.sound.play('sfx_select');
           this.scene.start("playScene");    
         }
+
         if (Phaser.Input.Keyboard.JustDown(keyRIGHT)) {
           // Expert mode
           game.settings = {
